@@ -14,6 +14,7 @@
 		F304BF0C232CE21C000CA3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F304BF0A232CE21C000CA3D9 /* LaunchScreen.storyboard */; };
 		F304BF0F232CE21C000CA3D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F304BF0E232CE21C000CA3D9 /* main.m */; };
 		F304BF19232CE21C000CA3D9 /* ReviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F304BF18232CE21C000CA3D9 /* ReviewTests.m */; };
+		F304BF26232CEB61000CA3D9 /* XSSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F304BF25232CEB61000CA3D9 /* XSSingletonObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		F304BF14232CE21C000CA3D9 /* ReviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F304BF18232CE21C000CA3D9 /* ReviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReviewTests.m; sourceTree = "<group>"; };
 		F304BF1A232CE21C000CA3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F304BF24232CEB61000CA3D9 /* XSSingletonObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSSingletonObject.h; sourceTree = "<group>"; };
+		F304BF25232CEB61000CA3D9 /* XSSingletonObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSSingletonObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		F304BEFE232CE21A000CA3D9 /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				F304BF23232CE320000CA3D9 /* Singleton */,
 				F304BEFF232CE21A000CA3D9 /* AppDelegate.h */,
 				F304BF00232CE21A000CA3D9 /* AppDelegate.m */,
 				F304BF02232CE21A000CA3D9 /* ViewController.h */,
@@ -101,6 +105,15 @@
 				F304BF1A232CE21C000CA3D9 /* Info.plist */,
 			);
 			path = ReviewTests;
+			sourceTree = "<group>";
+		};
+		F304BF23232CE320000CA3D9 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				F304BF24232CEB61000CA3D9 /* XSSingletonObject.h */,
+				F304BF25232CEB61000CA3D9 /* XSSingletonObject.m */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +219,7 @@
 				F304BF04232CE21A000CA3D9 /* ViewController.m in Sources */,
 				F304BF0F232CE21C000CA3D9 /* main.m in Sources */,
 				F304BF01232CE21A000CA3D9 /* AppDelegate.m in Sources */,
+				F304BF26232CEB61000CA3D9 /* XSSingletonObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
